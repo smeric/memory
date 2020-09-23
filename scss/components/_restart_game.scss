@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/**
+ * Restart game button
+ */
+
+#restart_game {
+    width: 25%;
+    margin-right: 20%;
+    float: right;
+    text-align: right;
+    }
+    #restart_game button {
+        border: none;
+        background: transparent url('../images/restart.png') 0 0 no-repeat;
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+        text-indent: -999px;
+        cursor: pointer;
+    }
+    #restart_game button:focus {
+        outline: 1px dotted lightgrey;
+    }
+
+    /* Animation du bouton au survol */
+    #restart_game button:hover {
+        -webkit-animation: rotate 2s infinite linear;
+           -moz-animation: rotate 2s infinite linear;
+                animation: rotate 2s infinite linear;
+    }
+    @-webkit-keyframes rotate {
+        from {-webkit-transform: rotate(0deg);}
+        to {-webkit-transform: rotate(-359deg);}
+    }
+    @keyframes rotate {
+        from {transform: rotate(0deg);}
+        to {transform: rotate(-359deg);}
+}

@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/**
+ * Error boxes
+ */
+
+.alert.error {
+    border-color: red;
+}
+.alert.error:before {
+    content: "\00d7";
+    color: white;
+    background-color: red;
+}
+
+// Javascript doit être activé pour que l'application puisse fonctionner
+.js #no-js-error {
+    display: none;
+}

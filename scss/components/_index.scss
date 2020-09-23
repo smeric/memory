@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/**
+ * Components Index
+ */
+
+@import "alert";
+    @import "alert-error";
+    @import "alert-info";
+    @import "alert-valid";
+    @import "alert-warning";
+@import "board";
+@import "progress_bar";
+@import "restart_game";
+@import "best_scores";

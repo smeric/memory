@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/**
+ * Best scores
+ */
+
+#best_scores {
+    width: 25%;
+    margin-left: 20%;
+    float: left;
+    text-align: left;
+    }
+    #best_scores ol li:first-child {
+        font-weight: bold;
+}

@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/**
+ * Valid boxes
+ */
+
+.alert.valid {
+    border-color: green;
+}
+.alert.valid:before {
+    content: "\2713";
+    color: white;
+    background-color: green;
+}

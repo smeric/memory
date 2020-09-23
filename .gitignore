@@ -1,0 +1,10 @@
+# Contenus non versionnés
+
+# Composer
+/public/vendor/
+
+# node-sass
+/node_modules/
+
+# Others
+*.pdf

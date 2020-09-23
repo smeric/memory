@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/**
+ * Warning boxes
+ */
+
+.alert.warning {
+    border-color: orange;
+}
+.alert.warning:before {
+    content: "!";
+    background-color: orange;
+}
+

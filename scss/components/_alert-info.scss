@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/**
+ * Info boxes
+ */
+
+.alert.info {
+    border-color: blue;
+}
+.alert.info:before {
+    content: "i";
+    color: white;
+    background-color: blue;
+}

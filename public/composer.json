@@ -1,0 +1,34 @@
+{
+    "name": "smeric/memory",
+    "description": "Un test technique Full Stack PHP.",
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "smeric/db",
+                "version": "0.3.2",
+                "source": {
+                    "url": "https://gist.github.com/bc0d10a9fef9b472e9653e592d3eb380.git",
+                    "type": "git",
+                    "reference": "master"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "SMeric\\Utilities\\": ""
+                    }
+                }
+            }
+        }
+    ],
+    "require": {
+        "smeric/db": "0.3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SMeric\\Apps\\Memory\\": "lib/"
+        }
+    },
+    "config":{
+        "vendor-dir": "vendor"
+    }
+}

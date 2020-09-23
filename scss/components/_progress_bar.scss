@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/**
+ * Progress bar
+ */
+
+#progress_bar_container {
+    background-color: lightgrey;
+}
+#progress_bar {
+    background-color: red;
+    width: 0;
+    height: 15px;
+}

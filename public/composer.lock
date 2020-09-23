@@ -1,0 +1,33 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "ef19bb9989f0757914aaf7850a91dbbe",
+    "packages": [
+        {
+            "name": "smeric/db",
+            "version": "0.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://gist.github.com/bc0d10a9fef9b472e9653e592d3eb380.git",
+                "reference": "master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SMeric\\Utilities\\": ""
+                }
+            }
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
