@@ -144,6 +144,7 @@ class ScoresManager {
         $score = $this->value();
         // Préparation de la requête d'insertion.
         $query = "INSERT INTO $table($col) VALUES($score)";
+        
         // Exécution de la requête.
         if ( $db->query( $query ) ){
             return $db->id();
@@ -159,7 +160,21 @@ class ScoresManager {
      * Pas utilisé...
      */
     public function delete(){
-        // Exécute une requête de type DELETE.
+        $db        = $this->_db();
+        $db_config = $this->dbConfig();
+        $table     = $db_config['table'];
+        $col       = $db_config['col'];
+        $score     = $this->value();
+        // Préparation de la requête de supression.
+        $query     = "DELETE FROM $table WHERE $col='$score';";
+
+        // Exécution de la requête.
+        if ( $db->query( $query ) ){
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     /**
@@ -167,8 +182,24 @@ class ScoresManager {
      *
      * Pas utilisé...
      */
-    public function get( $id ){
+    public function get(){
         // Exécute une requête de type SELECT avec une clause WHERE.
+        $db         = $this->_db();
+        $db_config  = $this->dbConfig();
+        $table      = $db_config['table'];
+        $col        = $db_config['col'];
+        // id de l'éléments à retrouver
+        $id         = $this->value();
+
+        // Liste sous forme d'un tableau
+        $db->setFetchMode(1);
+        // Préparation de la requête de selection.
+        $query = "SELECT $col FROM $table WHERE id=$id;";
+        // Exécution de la requête.
+        $db->query( $query );
+
+        // Récupération des données.
+        return $db->get();
     }
 
     /**
