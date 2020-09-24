@@ -27,11 +27,6 @@ if(!("CSS" in window)){window.CSS={}}if(!("supports" in window.CSS)){window.CSS.
             // On lance le jeu !
         const start_game = function(){
                 console.log( 'Initialisation des paramètres du jeu...' );
-                /*
-                if ( parseInt( $board.attr( 'data-flipped' ) ) > 0 ){
-                    reset_flipped();
-                }
-                */
                 // Initialisation des données stockées
                 $board.attr({
                     'data-flipped': 0,
@@ -283,6 +278,7 @@ if(!("CSS" in window)){window.CSS={}}if(!("supports" in window.CSS)){window.CSS.
                             best_scores += '<ol>';
                             for ( let i = 0; i < l; i++ ){
                                 score = ms_to_hms( response.msg[i][0] );
+                                // Passage du format des scores de milisecodes à 00:00:00
                                 best_scores += `<li>00:${(score.m<10?'0'+score.m:score.m)}:${(score.s<10?'0'+score.s:score.s)}</li>`;
                             }
                             best_scores += '</ol>';
@@ -321,7 +317,6 @@ if(!("CSS" in window)){window.CSS={}}if(!("supports" in window.CSS)){window.CSS.
 
         // On lance le jeu !
         start_game();
-
 
     });
 }(jQuery));
