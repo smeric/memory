@@ -84,21 +84,21 @@ class ScoresViewer {
      **************/
 
     /**
-     * 
+     * Accès à l'instance du manager
      */
     private function _manager(){
         return $this->_manager;
     }
 
     /**
-     * 
+     * Accès à l'instance du controler
      */
     private function _controler(){
         return $this->_controler;
     }
 
     /**
-     * 
+     * Accès à la réponse du viewer
      */
     public function response(){
         return $this->_response;
@@ -111,7 +111,7 @@ class ScoresViewer {
      **************/
 
     /**
-     * 
+     * Récupérer la réponse au format json
      */
     public function getJsonResponse(){
         $this->_setResponse();
